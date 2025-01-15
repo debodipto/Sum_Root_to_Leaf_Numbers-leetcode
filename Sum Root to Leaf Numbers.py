@@ -7,5 +7,4 @@ class Solution:
             if root.left is None and root.right is None:
                 return s
             return dfs(root.left, s) + dfs(root.right, s)
-
         return dfs(root, 0)
